@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/java and selenium/selenium-java-3.141.59 (1)/libs/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/java and selenium/selenium-java-3.141.59 (1)/libs/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/java and selenium/selenium-java-3.141.59 (1)/libs/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/java and selenium/selenium-java-3.141.59 (1)/libs/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/java and selenium/selenium-java-3.141.59 (1)/libs/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/java and selenium/selenium-java-3.141.59 (1)/libs/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/java and selenium/selenium-java-3.141.59 (1)/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/New folder/ATExcelReport.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/New folder/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/New folder/ExcelReportGenerator-4.0.1 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/New folder/jfreechart.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/New folder/jfreechart-dependency-jcommon-1.0.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/New folder/poi-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/New folder/poi-ooxml-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/New folder/poi-ooxml-schemas-3.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/New folder/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/freemarker-2.3.30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/surupura/Downloads/extentreports-2.41.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
