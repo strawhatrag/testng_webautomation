@@ -1,101 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-28T10:07:50 IST" name="Default suite" finished-at="2021-10-28T10:07:50 IST" duration-ms="66">
+  <suite started-at="2021-11-08T11:30:34 IST" name="Simplilearn" finished-at="2021-11-08T11:31:01 IST" duration-ms="26417">
     <groups>
     </groups>
-    <test started-at="2021-10-28T10:07:50 IST" name="Default test" finished-at="2021-10-28T10:07:50 IST" duration-ms="66">
-      <class name="testing.LoginTest">
-        <test-method signature="NegativeLogin(java.lang.String,java.lang.String)[pri:0, instance:testing.LoginTest@a3d8174]" started-at="2021-10-28T10:07:50 IST" name="NegativeLogin" finished-at="2021-10-28T10:07:50 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'UserName' is required by @Test on method NegativeLogin but has not been marked @Optional or defined
-in C:\Users\surupura\AppData\Local\Temp\testng-eclipse--883792332\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'UserName' is required by @Test on method NegativeLogin but has not been marked @Optional or defined
-in C:\Users\surupura\AppData\Local\Temp\testng-eclipse--883792332\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test started-at="2021-11-08T11:30:34 IST" name="Test" finished-at="2021-11-08T11:31:01 IST" duration-ms="26417">
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="ReportSetup()[pri:0, instance:test.LoginTest@662b4c69]" started-at="2021-11-08T11:30:34 IST" name="ReportSetup" finished-at="2021-11-08T11:30:35 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportSetup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.LoginTest@662b4c69]" started-at="2021-11-08T11:30:35 IST" name="setup" finished-at="2021-11-08T11:30:38 IST" duration-ms="3236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="NegativeLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@662b4c69]" started-at="2021-11-08T11:30:38 IST" name="NegativeLogin" finished-at="2021-11-08T11:30:49 IST" duration-ms="11345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass@15dfd]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeLogin -->
-        <test-method signature="PositiveLogin(java.lang.String,java.lang.String)[pri:0, instance:testing.LoginTest@a3d8174]" started-at="2021-10-28T10:07:50 IST" name="PositiveLogin" finished-at="2021-10-28T10:07:50 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'UserName' is required by @Test on method PositiveLogin but has not been marked @Optional or defined
-in C:\Users\surupura\AppData\Local\Temp\testng-eclipse--883792332\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'UserName' is required by @Test on method PositiveLogin but has not been marked @Optional or defined
-in C:\Users\surupura\AppData\Local\Temp\testng-eclipse--883792332\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:270)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.LoginTest@662b4c69]" started-at="2021-11-08T11:30:49 IST" name="teardown" finished-at="2021-11-08T11:30:49 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.LoginTest@662b4c69]" started-at="2021-11-08T11:30:49 IST" name="setup" finished-at="2021-11-08T11:30:52 IST" duration-ms="2300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="PositiveLogin(java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@662b4c69]" started-at="2021-11-08T11:30:52 IST" name="PositiveLogin" finished-at="2021-11-08T11:31:00 IST" duration-ms="8523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass@15dfd]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PositiveLogin -->
-      </class> <!-- testing.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.LoginTest@662b4c69]" started-at="2021-11-08T11:31:00 IST" name="teardown" finished-at="2021-11-08T11:31:01 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="ReportTearDown()[pri:0, instance:test.LoginTest@662b4c69]" started-at="2021-11-08T11:31:01 IST" name="ReportTearDown" finished-at="2021-11-08T11:31:01 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportTearDown -->
+      </class> <!-- test.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Simplilearn -->
 </testng-results>

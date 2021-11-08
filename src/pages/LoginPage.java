@@ -3,55 +3,79 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
-import testing.Baseclass;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+import test.Baseclass;
 
 public class LoginPage {
 	
 	WebDriver driver = Baseclass.driver;
 	
+	ExtentTest test = Baseclass.test;
+	
+	//elements
 	@FindBy(linkText="Log in")
 	WebElement LoginLink;
 	
 	@FindBy(name="user_login")
 	WebElement UserName;
 	
-	@FindBy(linkText="password")
+	@FindBy(id="password")
 	WebElement Password;
 	
 	@FindBy(className="rememberMe")
-	WebElement Remember;
+	WebElement Rememberme;
 	
-	@FindBy(linkText="btn_login")
+	@FindBy(name="btn_login")
 	WebElement LoginButton;
 	
-	@FindBy(linkText="msg_box")
+	@FindBy(id="msg_box")
 	WebElement Error;
-
-
-	public void Login(String UName, String Pwd) {
-		WebDriverWait wait = new WebDriverWait(driver,30);
-		//wait.until(ExpectionConditions.visiblilityof(LoginLink));
+	
+	public LoginPage() {
 		
-		LoginLink.click();
-		UserName.sendKeys(UName);
-		Password.sendKeys(Pwd);
-		Remember.click();
-		LoginButton.click();
-		
+		PageFactory.initElements(driver, this);
 		
 	}
 	
-	public void Errorcheck() {
-		String ActualMsg = Error.getText();
-		String ExpMsg = "the email is invalid";
+	//methods
+	public void Login(String UName, String Pword) {
 		
-		SoftAssert soft = new SoftAssert();
+		WebDriverWait wait = new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.visibilityOf(LoginLink));
+		
+		LoginLink.click();
+		test.log(LogStatus.PASS,"Click on Login Link", "Succesfully Clicked the Link");
+		
+		UserName.sendKeys(UName);
+		test.log(LogStatus.PASS,"Enter Username"+  UName, "Succesfully Entered the Name");
+		
+		Password.sendKeys(Pword);
+		test.log(LogStatus.PASS,"Enter Password"+ Pword, "Succesfully Entered Password");
+		
+		Rememberme.click();
+		LoginButton.click();
+		test.log(LogStatus.PASS,"Click on Login Button", "Succesfully Clicked the Login Button");
+		
+	}
+		
+	public void ErrorCheck() {
+			
+		String ActualMsg = Error.getText();
+		String ExpMsg = "The email or password you have entered is invalid.";
+			
+		//Assert.assertEquals(ActualMsg, ExpMsg); // Hard Assert
+			
+		SoftAssert soft = new SoftAssert(); // Soft Assert
 		soft.assertEquals(ActualMsg, ExpMsg);
 		soft.assertAll();
-
+			
 	}
-
+		
 }
